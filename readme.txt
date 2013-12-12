@@ -1,3 +1,8 @@
+This is a modified version of https://drupal.org/project/calendar, to address the issue detailed in https://drupal.org/node/591400, using the technique from https://drupal.org/comment/2555050#comment-2555050.  It is hosted here as a backup for our in-house usage.
+
+Original readme.txt below
+---------------------------------------------
+
 Creates calendar displays of Views results.
  
 Create a new calendar by enabling or cloning the default calendar,

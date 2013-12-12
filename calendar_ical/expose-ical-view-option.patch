@@ -1,0 +1,47 @@
+diff --git a/calendar_ical/calendar_ical.views.inc b/calendar_ical/calendar_ical.views.inc
+index 63a7b33..7b5db72 100644
+--- a/calendar_ical/calendar_ical.views.inc
++++ b/calendar_ical/calendar_ical.views.inc
+@@ -15,13 +15,13 @@ function calendar_ical_views_plugins() {
+       // Parents are not really displays, just needed so the files can
+       // be included.
+       'parent' => array(
+-        'no ui' => TRUE,
++        'no ui' => FALSE,
+         'handler' => 'views_plugin_display',
+         'path' => "$views_path/plugins",
+         'parent' => '',
+       ),
+       'page' => array(
+-        'no ui' => TRUE,
++        'no ui' => FALSE,
+         'handler' => 'views_plugin_display_page',
+         'path' => "$views_path/plugins",
+         'parent' => 'parent',
+@@ -34,7 +34,7 @@ function calendar_ical_views_plugins() {
+         'parent' => 'page',
+         'uses hook menu' => TRUE,
+         'theme' => 'views_view',
+-        'no ui' => TRUE,
++        'no ui' => FALSE,
+         'no remove' => TRUE,
+         'use ajax' => FALSE,
+         'use pager' => FALSE,
+@@ -47,7 +47,7 @@ function calendar_ical_views_plugins() {
+       'parent' => array(
+         // this isn't really a display but is necessary so the file can
+         // be included.
+-        'no ui' => TRUE,
++        'no ui' => FALSE,
+         'handler' => 'views_plugin_style',
+         'path' => "$views_path/plugins",
+         'parent' => '',
+@@ -55,7 +55,7 @@ function calendar_ical_views_plugins() {
+       'rss' => array(
+         // this isn't really a display but is necessary so the file can
+         // be included.
+-        'no ui' => TRUE,
++        'no ui' => FALSE,
+         'handler' => 'views_plugin_style_rss',
+         'path' => "$views_path/plugins",
+         'parent' => 'parent',
